@@ -73,7 +73,7 @@ export default function Navbar() {
     <>
       <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div className="container-fluid">
-          <div className="logo"><a href="#home"><img src={`${import.meta.env.VITE_REACT_API_APP}/Images/HogwartsLogo.png`} alt /></a></div>
+          <div className="logo"><a href="#home"><img src="/HogwartsLogo.png" alt /></a></div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
@@ -167,6 +167,9 @@ export default function Navbar() {
             </Link>
             <Link to="/wands" className="nav-link py-3 px-2">
               Wands
+            </Link>
+            <Link to="/houseQuiz" className="nav-link py-3 px-2">
+              Quiz
             </Link>
             <IconButton color="primary" aria-label="add to shopping cart" onClick={handleClose}>
               <CloseIcon />
